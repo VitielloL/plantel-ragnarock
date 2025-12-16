@@ -16,14 +16,14 @@
   {
     "id": 3,
     "image": "assets/items/armadura-corrida.png",
-    "date": "2025-10-07",
+    "date": "2025-12-07",
     "value": 5000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
   },
   {
     "id": 4,
-    "image": "assets/items/sapato-corrida.png",
-    "date": "2025-10-07",
+    "image": "assets/items/bota-corrida.png",
+    "date": "2025-12-07",
     "value": 5000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
   },
@@ -80,14 +80,14 @@
     "id": 12,
     "image": "assets/items/escudo-naga.png",
     "date": "2025-12-10",
-    "value": 2000000,
+    "value": 4000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "RD", "Vitiello", "Ocliper"]
   },
   {
     "id": 13,
     "image": "assets/items/escudo-bradium.png",
     "date": "2025-12-10",
-    "value": 2000000,
+    "value": 5000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "RD", "Vitiello", "Ocliper"]
   }
 ]
