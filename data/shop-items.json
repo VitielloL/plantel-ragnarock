@@ -4,28 +4,28 @@
     "image": "assets/items/guia-da-morte.png",
     "date": "2025-12-03",
     "value": 6000000,
-    "participants": ["Aleez", "China", "Duenz", "Gui", "Lelou", "Oryan", "RD", "Lelou", "Vitiello", "Jota", "Vitor"]
+    "participants": ["Aleez", "China", "Duenz", "Gui", "Lelou", "Oryan", "RD", "Vitiello", "Jota", "Vitor"]
   },
   {
     "id": 2,
     "image": "assets/items/frigideira-lunar-sp56.png",
     "date": "2025-12-07",
     "value": 10000000,
-    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
+    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Vitiello", "Jota"]
   },
   {
     "id": 3,
     "image": "assets/items/armadura-corrida.png",
     "date": "2025-12-07",
     "value": 5000000,
-    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
+    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Vitiello", "Jota"]
   },
   {
     "id": 4,
     "image": "assets/items/bota-corrida.png",
     "date": "2025-12-07",
     "value": 5000000,
-    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
+    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Vitiello", "Jota"]
   },
   {
     "id": 5,
