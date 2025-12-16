@@ -1,0 +1,38 @@
+/* ======================= */
+/* SHOP */
+/* ======================= */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.shop-card {
+  background: linear-gradient(135deg, #1e1e2e, #2a2a40);
+  border: 1px solid #5f5fc4;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-4px);
+}
+
+.shop-card img {
+  max-width: 100%;
+  height: 380px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,0.5));
+}
+
+.shop-info h3 {
+  font-size: 1rem;
+}
+
+.shop-info p {
+  font-size: 0.8rem;
+  color: #bdbdff;
+}

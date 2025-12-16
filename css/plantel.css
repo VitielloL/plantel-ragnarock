@@ -1,0 +1,62 @@
+/* ======================= */
+/* PLANTEL BUTTONS */
+/* ======================= */
+.plantel-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.plantel-buttons button {
+  background: transparent;
+  color: #dcd6ff;
+  border: 1px solid rgba(220,214,255,0.2);
+  padding: 5px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.plantel-buttons button.active {
+  background: #6c5ce7;
+  border-color: #6c5ce7;
+}
+
+/* ======================= */
+/* ROSTER */
+/* ======================= */
+.roster {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* ======================= */
+/* CARD */
+/* ======================= */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  background: linear-gradient(135deg, #1e1e2e, #2a2a40);
+  border: 1px solid #5f5fc4;
+  border-radius: 14px;
+}
+
+.class-img {
+  width: 56px;
+  height: 108px;
+  border-radius: 8px;
+  border: 2px solid #6c5ce7;
+  object-fit: cover;
+}
+
+.nick {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.class {
+  font-size: 0.9rem;
+  color: #bdbdff;
+}
