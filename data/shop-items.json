@@ -3,15 +3,78 @@
     "id": 1,
     "image": "assets/items/guia-da-morte.png",
     "date": "2025-12-03",
-    "value": 2000000,
+    "value": 6000000,
     "participants": ["Aleez", "China", "Duenz", "Gui", "Lelou", "Oryan", "RD", "Lelou", "Vitiello", "Jota", "Vitor"]
   },
   {
     "id": 2,
     "image": "assets/items/frigideira-lunar-sp56.png",
     "date": "2025-12-07",
-    "value": 2000000,
+    "value": 10000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
+  },
+  {
+    "id": 10,
+    "image": "assets/items/armadura-corrida.png",
+    "date": "2025-10-07",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
+  },
+  {
+    "id": 11,
+    "image": "assets/items/sapato-corrida.png",
+    "date": "2025-10-07",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
+  },
+  {
+    "id": 6,
+    "image": "assets/items/anel-corrida.png",
+    "date": "2025-12-08",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
+  },
+  {
+    "id": 7,
+    "image": "assets/items/armadura-naga.png",
+    "date": "2025-12-08",
+    "value": 4000000,
+    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
+  },
+  {
+    "id": 8,
+    "image": "assets/items/bota-corrida.png",
+    "date": "2025-12-08",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
+  },
+  {
+    "id": 5,
+    "image": "assets/items/escudo-naga.png",
+    "date": "2025-12-09",
+    "value": 4000000,
+    "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
+  },
+  {  
+    "id": 5,
+    "image": "assets/items/armadura-corrida.png",
+    "date": "2025-12-09",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
+  },
+  {  
+    "id": 5,
+    "image": "assets/items/couro-leao.png",
+    "date": "2025-12-09",
+    "value": 4000000,
+    "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
+  },
+  {  
+    "id": 5,
+    "image": "assets/items/armadura-corrida.png",
+    "date": "2025-12-09",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
   },
   {
     "id": 3,
@@ -26,54 +89,5 @@
     "date": "2025-12-10",
     "value": 2000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "RD", "Vitiello", "Ocliper"]
-  },
-    {
-    "id": 5,
-    "image": "assets/items/escudo-naga.png",
-    "date": "2025-12-09",
-    "value": 2000000,
-    "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
-  },
-  {
-    "id": 6,
-    "image": "assets/items/anel-corrida.png",
-    "date": "2025-12-08",
-    "value": 2000000,
-    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
-  },
-  {
-    "id": 7,
-    "image": "assets/items/escudo-naga.png",
-    "date": "2025-12-08",
-    "value": 2000000,
-    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
-  },
-  {
-    "id": 8,
-    "image": "assets/items/escudo-naga.png",
-    "date": "2025-12-08",
-    "value": 2000000,
-    "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
-  },
-    {
-    "id": 9,
-    "image": "assets/items/escudo-naga.png",
-    "date": "2025-12-08",
-    "value": 2000000,
-    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
-  },
-  {
-    "id": 10,
-    "image": "assets/items/armadura-corrida.png",
-    "date": "2025-10-07",
-    "value": 2000000,
-    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
-  },
-   {
-    "id": 11,
-    "image": "assets/items/sapato-corrida.png",
-    "date": "2025-10-07",
-    "value": 2000000,
-    "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
   }
 ]
