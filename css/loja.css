@@ -7,6 +7,9 @@
   gap: 18px;
 }
 
+/* ======================= */
+/* SHOP CARD */
+/* ======================= */
 .shop-card {
   background: linear-gradient(135deg, #1e1e2e, #2a2a40);
   border: 1px solid #5f5fc4;
@@ -20,6 +23,9 @@
   transform: translateY(-4px);
 }
 
+/* ======================= */
+/* IMAGEM */
+/* ======================= */
 .shop-card img {
   max-width: 100%;
   height: 380px;
@@ -28,6 +34,9 @@
   filter: drop-shadow(0 6px 14px rgba(0,0,0,0.5));
 }
 
+/* ======================= */
+/* INFO */
+/* ======================= */
 .shop-info h3 {
   font-size: 1rem;
 }
@@ -35,4 +44,94 @@
 .shop-info p {
   font-size: 0.8rem;
   color: #bdbdff;
+}
+
+/* ======================= */
+/* CONTROLS / ICONS */
+/* ======================= */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.icon {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  color: #bdbdff;
+  user-select: none;
+}
+
+/* ======================= */
+/* TOOLTIP */
+/* ======================= */
+.tooltip {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+
+  background: #0f0f16;
+  color: #eaeaff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #5f5fc4;
+
+  width: 360px;          /* 🔥 LARGURA AUMENTADA */
+  max-width: 90vw;
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  white-space: normal;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 50;
+}
+
+/* Setinha */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 7px;
+  border-style: solid;
+  border-color: #5f5fc4 transparent transparent transparent;
+}
+
+/* ======================= */
+/* TOOLTIP VISÍVEL */
+/* ======================= */
+.icon:hover .tooltip,
+.icon:focus .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ======================= */
+/* TOOLTIP PARTICIPANTES */
+/* ======================= */
+.tooltip span {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 4px;
+  background: #1e1e2e;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.info-icon .tooltip {
+  width: 220px;
+}
+
+/* Tooltip MAIOR – divisão */
+.split-icon .tooltip {
+  width: 380px; /* permanece o perfeito */
 }
