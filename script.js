@@ -23,4 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // inicial
   showPlantel(1);
+
+  // Forçar layout mobile durante testes: adiciona classe `mobile-view` ao body
+  function updateMobileClass() {
+    if (window.innerWidth <= 700) document.body.classList.add('mobile-view');
+    else document.body.classList.remove('mobile-view');
+  }
+
+  window.addEventListener('resize', updateMobileClass);
+  // chamada inicial
+  updateMobileClass();
 });

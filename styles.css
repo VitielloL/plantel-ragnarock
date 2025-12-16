@@ -123,7 +123,74 @@ h1 {
   opacity: 0.8;
 }
 
-/* Small screens: make two columns */
+/* Small screens: single column cards for better mobile UX */
 @media (max-width: 700px) {
-  .roster { grid-template-columns: repeat(2, 1fr); }
+  .roster { grid-template-columns: 1fr; }
+  .card { padding: 12px; gap: 12px; }
+  .card:hover { transform: none; box-shadow: none; }
+  .plantel-buttons { justify-content: flex-start; }
+}
+
+/* Strong overrides when JS forces mobile view (helps DevTools testing) */
+.mobile-view .roster { grid-template-columns: 1fr !important; }
+.mobile-view .card { padding: 12px !important; gap: 12px !important; }
+.mobile-view .card:hover { transform: none !important; box-shadow: none !important; }
+.mobile-view .class-img { width: 44px !important; height: 84px !important; }
+
+/* Mobile-first tweaks: single column, stack card content, smaller paddings */
+@media (max-width: 480px) {
+  .container {
+    margin: 16px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .plantel-title {
+    gap: 8px;
+  }
+
+  h1 { font-size: 1.4rem; }
+
+  .plantel-buttons button { padding: 6px 8px; font-size: 0.95rem; }
+
+  .roster { grid-template-columns: 1fr; gap: 12px; }
+
+  .card {
+    flex-direction: row; /* keep row but allow image smaller */
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .class-img {
+    width: 44px;
+    height: 84px;
+    border-radius: 6px;
+  }
+
+  .nick { font-size: 1rem; }
+  .class { font-size: 0.9rem; }
+}
+
+/* Very small screens: stack image above text for narrow widths */
+@media (max-width: 360px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 8px;
+  }
+
+  .class-img {
+    width: 56px;
+    height: 96px;
+    margin-bottom: 8px;
+  }
+
+  .info { align-items: center; }
 }
