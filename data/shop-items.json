@@ -14,77 +14,77 @@
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
   },
   {
-    "id": 10,
+    "id": 3,
     "image": "assets/items/armadura-corrida.png",
     "date": "2025-10-07",
     "value": 5000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
   },
   {
-    "id": 11,
+    "id": 4,
     "image": "assets/items/sapato-corrida.png",
     "date": "2025-10-07",
     "value": 5000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "Lelou", "Vitiello", "Jota"]
   },
   {
-    "id": 6,
+    "id": 5,
     "image": "assets/items/anel-corrida.png",
     "date": "2025-12-08",
     "value": 5000000,
     "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
   },
   {
-    "id": 7,
+    "id": 6,
     "image": "assets/items/armadura-naga.png",
     "date": "2025-12-08",
     "value": 4000000,
     "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
   },
   {
-    "id": 8,
+    "id": 7,
     "image": "assets/items/bota-corrida.png",
     "date": "2025-12-08",
     "value": 5000000,
     "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
   },
   {
-    "id": 5,
+    "id": 8,
     "image": "assets/items/escudo-naga.png",
     "date": "2025-12-09",
     "value": 4000000,
     "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
   },
   {  
-    "id": 5,
+    "id": 9,
     "image": "assets/items/armadura-corrida.png",
     "date": "2025-12-09",
     "value": 5000000,
     "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
   },
   {  
-    "id": 5,
+    "id": 10,
     "image": "assets/items/couro-leao.png",
     "date": "2025-12-09",
     "value": 4000000,
     "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
   },
   {  
-    "id": 5,
+    "id": 11,
     "image": "assets/items/armadura-corrida.png",
     "date": "2025-12-09",
     "value": 5000000,
     "participants": ["Aleez", "China", "Gabu", "Gui", "Krulezz", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
   },
   {
-    "id": 3,
+    "id": 12,
     "image": "assets/items/escudo-naga.png",
     "date": "2025-12-10",
     "value": 2000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "RD", "Vitiello", "Ocliper"]
   },
   {
-    "id": 4,
+    "id": 13,
     "image": "assets/items/escudo-bradium.png",
     "date": "2025-12-10",
     "value": 2000000,
