@@ -38,6 +38,21 @@ body {
 /* ======================= */
 /* HEADER */
 /* ======================= */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.plantel-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 h1 {
   margin: 0;
   font-size: 2.2rem;
@@ -46,20 +61,38 @@ h1 {
   text-shadow: 0 0 8px rgba(108, 92, 231, 0.8);
 }
 
-.header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 18px;
-  gap: 12px;
+.subtitle {
+  font-size: 0.85rem;
+  color: #bdbdff;
 }
 
-.plantel-title {
+/* ======================= */
+/* NAV BUTTONS */
+/* ======================= */
+.nav-buttons {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
+.nav-btn {
+  background: linear-gradient(135deg, #6c5ce7, #8e7dff);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(108,92,231,0.6);
+}
+
+/* ======================= */
+/* PLANTEL BUTTONS */
+/* ======================= */
 .plantel-buttons {
   display: flex;
   gap: 6px;
@@ -102,7 +135,6 @@ h1 {
   background: linear-gradient(135deg, #1e1e2e, #2a2a40);
   border: 1px solid #5f5fc4;
   border-radius: 14px;
-  max-width: 100%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -112,7 +144,7 @@ h1 {
 }
 
 /* ======================= */
-/* IMAGEM */
+/* IMAGEM CLASSE */
 /* ======================= */
 .class-img {
   width: 56px;
@@ -149,6 +181,52 @@ h1 {
 }
 
 /* ======================= */
+/* SHOP (LOJA) */
+/* ======================= */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.shop-card {
+  background: linear-gradient(135deg, #1e1e2e, #2a2a40);
+  border: 1px solid #5f5fc4;
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-4px);
+}
+
+.shop-card img {
+  max-width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.shop-info h3 {
+  margin: 6px 0 4px;
+  font-size: 1rem;
+}
+
+.shop-info p {
+  font-size: 0.8rem;
+  color: #bdbdff;
+}
+
+.price {
+  display: inline-block;
+  margin-top: 6px;
+  color: #6cffa7;
+  font-weight: bold;
+}
+
+/* ======================= */
 /* FOOTER */
 /* ======================= */
 .footer {
@@ -164,11 +242,10 @@ h1 {
 }
 
 /* ======================= */
-/* 📱 MOBILE FINAL */
+/* 📱 MOBILE */
 /* ======================= */
 @media (max-width: 768px) {
 
-  /* CONTAINER CENTRALIZADO, SEM BORDA */
   .container {
     width: 100%;
     margin: 0 auto;
@@ -179,28 +256,28 @@ h1 {
     background: transparent;
   }
 
-  /* 1 CARD POR LINHA */
-  .roster {
-    grid-template-columns: 1fr !important;
-    gap: 10px;
-  }
-
   h1 {
     font-size: 1.25rem;
   }
 
   .header-row {
-    flex-direction: column;
     align-items: flex-start;
-    gap: 6px;
   }
 
-  .plantel-buttons button {
-    font-size: 0.8rem;
-    padding: 4px 7px;
+  .nav-buttons {
+    width: 100%;
   }
 
-  /* CARD MOBILE */
+  .nav-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .roster {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+
   .card {
     padding: 8px;
     gap: 8px;
