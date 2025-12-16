@@ -4,102 +4,21 @@
   <meta charset="UTF-8" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%236c5ce7'/%3E%3Ctext x='50' y='55' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3ER%3C/text%3E%3C/svg%3E" />
   <title>Plantel Ragnarok Online</title>
-  <style>
-
-    html, body {
-    height: 100vh;
-    margin: 0;
-    overflow: hidden; /* 🔥 mata o scroll */
-    }
-
-    body {
-      min-height: 100vh;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      background: radial-gradient(circle at top, #2b2b3c, #0f0f16 70%);
-      color: #f5f5f5;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 24px;
-      background: rgba(20, 20, 30, 0.85);
-      border: 2px solid #6c5ce7;
-      border-radius: 16px;
-      box-shadow: 0 0 25px rgba(108, 92, 231, 0.35);
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 32px;
-      font-size: 2.4rem;
-      letter-spacing: 2px;
-      color: #dcd6ff;
-      text-shadow: 0 0 8px rgba(108, 92, 231, 0.8);
-    }
-
-    .roster {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      padding: 16px;
-      background: linear-gradient(135deg, #1e1e2e, #2a2a40);
-      border: 1px solid #5f5fc4;
-      border-radius: 14px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px) scale(1.01);
-      box-shadow: 0 0 18px rgba(95, 95, 196, 0.6);
-    }
-
-    .class-img {
-      width: 60px;
-      height: 115px;
-      flex-shrink: 0;
-      border-radius: 8px;
-      border: 2px solid #6c5ce7;
-      background: #000;
-      object-fit: cover;
-    }
-
-    .info {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .nick {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #ffffff;
-    }
-
-    .class {
-      font-size: 0.95rem;
-      color: #bdbdff;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 32px;
-      font-size: 0.8rem;
-      color: #9a9ad1;
-      opacity: 0.8;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Plantel – Ragnarok Online</h1>
+    <div class="header-row">
+      <div class="plantel-title">
+        <h1>Plantel – Ragnarok Online</h1>
+        <div class="plantel-buttons">
+          <button id="btn-1" class="active" type="button">1</button>
+          <button id="btn-2" type="button">2</button>
+        </div>
+      </div>
+    </div>
 
-    <div class="roster">
+    <div id="plantel-1" class="roster">
       <!-- Troque o src das imagens pelos links do RateMyServer -->
 
       <div class="card">
@@ -174,6 +93,14 @@
         </div>
       </div>
 
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+
        <div class="card">
         <div class="class-img empty" aria-hidden="true"></div>
         <div class="info">
@@ -182,15 +109,7 @@
         </div>
       </div>
 
-      <div class="card">
-        <div class="class-img empty" aria-hidden="true"></div>
-        <div class="info">
-          <div class="nick">--</div>
-          <div class="class">--</div>
-        </div>
-      </div>
-
-      <div class="card">
+       <div class="card">
         <div class="class-img empty" aria-hidden="true"></div>
         <div class="info">
           <div class="nick">--</div>
@@ -199,12 +118,100 @@
       </div>
     </div>
 
-      
+    <div id="plantel-2" class="roster" style="display:none">
+      <!-- Plantel 2: placeholders -->
+      <!-- Repetir 12 slots com -- -->
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="class-img empty" aria-hidden="true"></div>
+        <div class="info">
+          <div class="nick">--</div>
+          <div class="class">--</div>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
       Plantel para instancias da guild dos Canalhas.
     </div>
   </div>
-</body>
-</html>
+      <script src="script.js"></script>
+    </div>
+  </body>
+  </html>
