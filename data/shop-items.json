@@ -4,7 +4,7 @@
     "image": "assets/items/guia-da-morte.png",
     "date": "2025-12-03",
     "value": 6000000,
-    "participants": ["Aleez", "China", "Duenz", "Gui", "Lelou", "Oryan", "RD", "Vitiello", "Jota", "Vitor"]
+    "participants": ["Aleez", "China", "Duenz", "Gui", "Lelou", "Oryan", "RD", "Vitiello", "Jota", "Ocliper"]
   },
   {
     "id": 2,
@@ -32,14 +32,14 @@
     "image": "assets/items/anel-corrida.png",
     "date": "2025-12-08",
     "value": 5000000,
-    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
+    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelou", "Duenz", "Vitiello", "Ocliper", "Jota"]
   },
   {
     "id": 6,
     "image": "assets/items/armadura-naga.png",
     "date": "2025-12-08",
     "value": 4000000,
-    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelau", "Duenz", "Vitiello", "Ocliper", "Jota"]
+    "participants": ["Aleez", "China", "Gui", "Krulezz", "RD", "Lelou", "Duenz", "Vitiello", "Ocliper", "Jota"]
   },
   {
     "id": 7,

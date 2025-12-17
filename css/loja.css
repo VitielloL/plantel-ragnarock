@@ -80,7 +80,7 @@
   border-radius: 10px;
   border: 1px solid #5f5fc4;
 
-  width: 360px;          /* 🔥 LARGURA AUMENTADA */
+  width: 360px;
   max-width: 90vw;
   text-align: left;
   font-size: 0.8rem;
@@ -133,5 +133,46 @@
 
 /* Tooltip MAIOR – divisão */
 .split-icon .tooltip {
-  width: 380px; /* permanece o perfeito */
+  width: 380px;
+}
+
+/* ======================= */
+/* FILTRO PARTICIPANTES */
+/* ======================= */
+#participant-filter {
+  background: #1e1e2e;
+  color: #eaeaff;
+  border: 1px solid #5f5fc4;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+/* ======================= */
+/* BOTÃO ORDENAR */
+/* ======================= */
+#sort-date-btn {
+  background: #1e1e2e;
+  color: #eaeaff;
+  border: 1px solid #5f5fc4;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+#sort-date-btn:hover {
+  background: #2a2a40;
+  transform: translateY(-1px);
+}
+
+#sort-date-btn:active {
+  transform: translateY(0);
+}
+
+#sort-date-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(95, 95, 196, 0.4);
 }

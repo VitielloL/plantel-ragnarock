@@ -1,15 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
   const shopGrid = document.getElementById('shop-grid');
   const sortBtn = document.getElementById('sort-date-btn');
+  const participantFilter = document.getElementById('participant-filter');
 
   let newestFirst = true;
   let shopItems = [];
+  let activeParticipant = '';
 
   function formatNumber(n) {
     return n.toLocaleString('pt-BR');
   }
 
-  // 🔒 Render seguro
+  /* =======================
+     RENDER DA LOJA
+  ======================= */
   function renderShop(items) {
     shopGrid.innerHTML = '';
 
@@ -23,12 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const perPerson = Math.floor(item.value / item.participants.length);
 
+      const [yyyy, mm, dd] = item.date.split('-');
+
       const card = document.createElement('div');
       card.className = 'shop-card';
       card.dataset.date = item.date;
-
-      // parse manual da data (SEM timezone)
-      const [yyyy, mm, dd] = item.date.split('-');
 
       card.innerHTML = `
         <img src="${item.image}" alt="Item da loja">
@@ -61,31 +64,76 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function sortShopByDate(newest) {
-    const sorted = [...shopItems].sort((a, b) =>
-      newest
+  /* =======================
+     FILTRO + ORDENAÇÃO
+  ======================= */
+  function getFilteredItems() {
+    let filtered = [...shopItems];
+
+    if (activeParticipant) {
+      filtered = filtered.filter(item =>
+        item.participants.includes(activeParticipant)
+      );
+    }
+
+    return filtered.sort((a, b) =>
+      newestFirst
         ? b.date.localeCompare(a.date)
         : a.date.localeCompare(b.date)
     );
-
-    renderShop(sorted);
   }
 
+  /* =======================
+     POPULAR FILTRO
+  ======================= */
+  function populateParticipants(items) {
+    const allParticipants = new Set();
+
+    items.forEach(item => {
+      item.participants.forEach(p => allParticipants.add(p));
+    });
+
+    [...allParticipants]
+      .sort()
+      .forEach(name => {
+        const option = document.createElement('option');
+        option.value = name;
+        option.textContent = name;
+        participantFilter.appendChild(option);
+      });
+  }
+
+  /* =======================
+     EVENTOS
+  ======================= */
   if (sortBtn) {
     sortBtn.addEventListener('click', () => {
       newestFirst = !newestFirst;
-      sortShopByDate(newestFirst);
+
       sortBtn.textContent = newestFirst
         ? 'Ordenar: Mais recentes'
         : 'Ordenar: Mais antigos';
+
+      renderShop(getFilteredItems());
     });
   }
 
+  if (participantFilter) {
+    participantFilter.addEventListener('change', e => {
+      activeParticipant = e.target.value;
+      renderShop(getFilteredItems());
+    });
+  }
+
+  /* =======================
+     FETCH DOS ITENS
+  ======================= */
   fetch('data/shop-items.json')
     .then(res => res.json())
     .then(data => {
       shopItems = Array.isArray(data) ? data : [];
-      sortShopByDate(true);
+      populateParticipants(shopItems);
+      renderShop(getFilteredItems());
     })
     .catch(err => console.error('Erro ao carregar loja:', err));
 });
