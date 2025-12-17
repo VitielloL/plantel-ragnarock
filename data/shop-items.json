@@ -89,5 +89,26 @@
     "date": "2025-12-10",
     "value": 5000000,
     "participants": ["Aleez", "China", "Duenz", "Gabu", "Gui", "Krulezz", "Lelou", "Oryan", "RD", "Vitiello", "Ocliper"]
+  },
+  {
+    "id": 14,
+    "image": "assets/items/escudo-torneio.png",
+    "date": "2025-12-17",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Duenz", "Gui", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
+  },
+  {
+    "id": 15,
+    "image": "assets/items/carta-strouf.png",
+    "date": "2025-12-17",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Duenz", "Gui", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
+  },
+  {
+    "id": 16,
+    "image": "assets/items/frigideira-lunar-agi.png",
+    "date": "2025-12-17",
+    "value": 5000000,
+    "participants": ["Aleez", "China", "Duenz", "Gui", "Oryan", "RD", "Vitiello", "Ocliper", "Jota"]
   }
 ]
